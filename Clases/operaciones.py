@@ -11,3 +11,4 @@ dividir = numeroA/numeroB
 print(f"la división dio {dividir} exitosamente")
 exponente = numeroA**numeroB
 print(f"la exponente dio {exponente} exitosamente")
+print("que pasa chavales")
