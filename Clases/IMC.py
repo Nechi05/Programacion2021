@@ -8,7 +8,7 @@ MENSAJE_RESULTADO = "El resultado de la prueba de obesidad es..."
 print(MENSAJE_BIENVENIDA)
 peso = float(input(PREGUNTA_PESO))
 estatura = float(input(PREGUNTA_ESTATURA))
-IMC = peso/(estatura**2)
+imc = peso/(estatura**2)
 print(MENSAJE_DESPEDIDA, IMC)
 isObeso = IMC>= 30
 print(MENSAJE_RESULTADO,isObeso)
