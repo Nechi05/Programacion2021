@@ -19,12 +19,12 @@ isAdecuado = imc >= 18.5 and imc < 25
 isSobrepeso = imc >= 25 and imc < 30
 resultado = ""
 if(isBajoPeso):
-    resultado = (MENSAJE_BAJO_PESO)
+    resultado=(MENSAJE_BAJO_PESO)
 elif(isAdecuado):
-    resultado(MENSAJE_ADECUADO)
+    resultado=(MENSAJE_ADECUADO)
 elif(isSobrepeso):
-    resultado(MENSAJE_SOBREPESO)
+    resultado=(MENSAJE_SOBREPESO)
 else:
-    resultado(MENSAJE_OBESO)
+    resultado=(MENSAJE_OBESO)
 print(MENSAJE_DESPEDIDA, imc)
 print(resultado)
