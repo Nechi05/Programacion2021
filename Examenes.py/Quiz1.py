@@ -1,6 +1,6 @@
 #............Perfil Lipidico............#
 #......Constantes......#
-MENSAJE_BIENVENIDA = "Hola, a continuación vamos a averiguar el estado en el que están tus niveles de triglicéridos y de homocisteína"
+MENSAJE_BIENVENIDA = "Hola, a continuación vamos a averiguar el estado en el que están los niveles de triglicéridos y de homocisteína"
 VALOR_TRI = "Cual es el nivel de trigliceridos en sangre del paciente en mg/dL? : "
 VALOR_HOMO = "Cual es el nivel de homocisteína en sangre del paciente en µmol/L? : "
 MENSAJE_OPTIMO_TRI = "El nivel de trigliceridos en sangre es óptimo"
