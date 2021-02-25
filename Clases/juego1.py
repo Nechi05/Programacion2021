@@ -10,7 +10,7 @@ PREGUNTA_NUMERO = '''
 '''
 PREGUNTA_FALLIDA = 'Aaaaah! Fallaste, ingresa otro número '
 MENSAJE_GANASTE = 'Felicidades, ganaste!'
-MENSAJE_PERDISTE = 'Perdiste, vuelve a intentarlo'
+MENSAJE_PERDISTE = 'Perdiste! vuelve a intentarlo,'
 #...Entrada al código...#
 numeroOculto = 7
 vidas = 5
@@ -21,8 +21,8 @@ if (numeroIngresado != numeroOculto):
 while (numeroOculto != numeroIngresado and vidas >0) :
     numeroIngresado = int(input(PREGUNTA_FALLIDA))
     vidas-=1
-if (vidas >=0):
+if (vidas >=0 and numeroOculto == numeroIngresado):
     print (MENSAJE_GANASTE)
     print (vidas)
 else:
-    print(MENSAJE_PERDISTE)
+    print(MENSAJE_PERDISTE, "el número era el ", numeroOculto)
