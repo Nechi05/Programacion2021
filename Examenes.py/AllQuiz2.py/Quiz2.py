@@ -1,5 +1,5 @@
 #......Preguntas......#
-PreguntaNumero = ''' Ingrese una de estas opciones para: 
+MenuInicio = ''' Ingrese una de estas opciones para: 
     1. Convertir las temperaturas en °C a K o °F
     2. Conocer el estado en que se encuentra el paciente 
     3. Conocer la temperatura más alta y más baja
@@ -27,7 +27,6 @@ MensajeNoValido = 'Opción ingresada no válida'
 Temperatura_Corporal = [36,37,38,35,36,38,37.5,38.2,41,37.4,38.6,39.1,40.3,33]
 
 #...Entrada al código...#
-print (MensajeBienvenida)
 #.......ConversionPuntoUno.............#
 TemperaturaFahrenheit = []
 for elemento in Temperatura_Corporal:
@@ -38,7 +37,8 @@ for elemento in Temperatura_Corporal:
     conversor = round (elemento+273.15)
     TemperaturaKelvin.append (conversor)
 
-opcionEscogida = int(input(PreguntaNumero))
+print (MensajeBienvenida)
+opcionEscogida = int(input(MenuInicio))
 while (opcionEscogida !=5):
 #....OpcionUno.....#
     if (opcionEscogida == 1):
@@ -73,5 +73,5 @@ while (opcionEscogida !=5):
         print (MensajeSaliendo)
     else:
         print (MensajeNoValido)
-    opcionEscogida = int(input(PreguntaNumero))
+    opcionEscogida = int(input(MenuInicio))
 print (MensajeDespedida)
