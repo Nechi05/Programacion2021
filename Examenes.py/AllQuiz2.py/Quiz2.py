@@ -10,7 +10,7 @@ PreguntaTemperatura = '''
     F. Mostrar temperatura en grados Fahrenheit
     K. Mostrar temperatura en grados Kelvin
 '''
-PreguntaGradoTemp = 'Ingrese una temperatura en °C'
+PreguntaGradoTemp = 'Ingrese una temperatura en °C : '
 #............Mensajes..........#
 MensajeBienvenida = "Buen día, te doy la bienvenida a NeoNatalChild"
 MensajeOpcionC = 'La conversión no es necesaria'
@@ -33,23 +33,10 @@ TemperaturaFahrenheit = []
 for elemento in Temperatura_Corporal:
     conversor = round (elemento*1.8+32)
     TemperaturaFahrenheit.append (conversor)
-
 TemperaturaKelvin = []
 for elemento in Temperatura_Corporal:
     conversor = round (elemento+273.15)
     TemperaturaKelvin.append (conversor)
-
-#.......Estado de la temperatura.......#
-EstadoTemperatura = []
-for elemento in Temperatura_Corporal:
-    EstadoTemperatura = ''
-    if (elemento < 36):
-        EstadoTemperatura = 'Hipotermia'
-    elif (elemento >= 37.6):
-        EstadoTemperatura = 'Fiebre'
-    elif (elemento >= 36 and elemento <37.6):
-        EstadoTemperatura = 'temperatura normal'
-    Temperatura_Corporal.append (EstadoTemperatura)
 
 opcionEscogida = int(input(PreguntaNumero))
 while (opcionEscogida !=5):
@@ -71,8 +58,12 @@ while (opcionEscogida !=5):
     elif (opcionEscogida == 2):
         valorIngresado = float (input(PreguntaGradoTemp))
         Temperatura_Corporal.append (valorIngresado)
-        print (Temperatura_Corporal)
-#Aquí necesito asesoria y para el invalid syntax :| ...#
+        if (valorIngresado < 36):
+            print ('El paciente presenta Hipotermia')
+        elif (valorIngresado >= 37.6):
+            print ('El paciente presenta Fiebre')
+        elif (valorIngresado >= 36 and valorIngresado < 37.6):
+            print ('El paciente presenta temperatura normal')
 #......OpcionTres.......#
     elif (opcionEscogida == 3):
         print (MensajeMayor, max (Temperatura_Corporal))
