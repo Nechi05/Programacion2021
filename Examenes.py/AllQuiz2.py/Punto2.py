@@ -4,3 +4,15 @@ PreguntaGradoTemp = 'Ingrese una temperatura en °C'
 valorIngresado = float (input(PreguntaGradoTemp))
 Temperatura_Corporal.append (valorIngresado)
 print (Temperatura_Corporal)
+
+#.......Estado de la temperatura.......#
+EstadoTemperatura = []
+for elemento in Temperatura_Corporal:
+    EstadoTemperatura = ''
+    if (elemento < 36):
+        EstadoTemperatura = 'Hipotermia'
+    elif (elemento >= 37.6):
+        EstadoTemperatura = 'Fiebre'
+    elif (elemento >= 36 and elemento <37.6):
+        EstadoTemperatura = 'temperatura normal'
+    Temperatura_Corporal.append (EstadoTemperatura)
