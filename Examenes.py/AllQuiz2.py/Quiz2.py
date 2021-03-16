@@ -72,6 +72,7 @@ while (opcionEscogida !=5):
         valorIngresado = float (input(PreguntaGradoTemp))
         Temperatura_Corporal.append (valorIngresado)
         print (Temperatura_Corporal)
+#Aquí necesito asesoria y para el invalid syntax :| ...#
 #......OpcionTres.......#
     elif (opcionEscogida == 3):
         print (MensajeMayor, max (Temperatura_Corporal))
