@@ -13,6 +13,7 @@ class Gato ():
             muestra la cantidad de metros que recorrerá el gato por la casa
         *mostrarAtributos()
             muestra los atributos de la mascota
+        NOTA: presa y nombreRoedor deben expresarse en plural
     '''
 
     def __init__ (self, nombreEntrada,edadEntrada,colorEntrada,razaEntrada):
@@ -39,14 +40,32 @@ def linedesign(cantidad = 10, simbolo = '#'):
         print (simbolo *cantidad)
         return None
 
+#Especialidades
+
+class Salvaje (Gato):
+    def cazar (self,presa):
+        print (f'Soy un {self.raza} salvaje y puedo cazar {presa} de gran tamaño  en el bosque')
+
+class Domestico (Gato):
+    def cuidarCasa (self,especieRoedor):
+        print (f'Soy un {self.raza} doméstico y cuido la casa de los {especieRoedor} que merodean')
+
 
 gato1 = Gato ('Michu',4,'Blanco con negro','Criollo')
 gato2 = Gato ('Julieta',48,'Café','Siamés')
-
 gato1.maullar ('Miau')
 gato1.mostrarAtributos ()
 gato1.caminar (15) 
+
 linedesign (3, '.......')
 gato2.maullar ('Miau')
 gato2.mostrarAtributos ()
 gato2.comer (120,'Mirringo')
+
+linedesign (3, '.......')
+gatosalvaje = Salvaje ('NN',48,'negro','persa')
+gatosalvaje.cazar ('Iguanas')
+
+linedesign (3, '.......')
+gatoDomestico = Domestico ('NN',48,'Blanco','Bengala')
+gatoDomestico.cuidarCasa ('Ratones')
