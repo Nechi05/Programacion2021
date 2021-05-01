@@ -37,7 +37,38 @@ print (promedioEdades)
 edades.pop (2)
 print (edades)
 
-#ciclo for y las listas
-largoListaEdades = len (edades)
+## Ciclo for y las listas
+largoListaEdades = len(edades)
 for indice in range (largoListaEdades):
-    print (edades[indice])
+    print ('estoy en la posicion',
+    indice,'valgo',
+    edades[indice])
+largoListaNombres = len (nombres)
+for indice in range (largoListaNombres):
+    print (nombres[indice])
+
+posicionesConValoresPares = []
+largoListaEdades = len(edades)
+for posicion in range (largoListaEdades):
+    if (edades[posicion]%2 == 0):
+        posicionesConValoresPares.append(posicion)
+
+print (edades)
+print (posicionesConValoresPares)
+
+#solo cuando les interese mostrar la lista
+posicion=0
+for edad in edades:
+    print (edad)
+for nombre in nombres:
+    print(nombre)
+    print (posicion)
+    posicion+=1
+
+posicion = 0
+posicionesPares =[]
+for edad in edades:
+    if (edad%2 ==0):
+        posicionesPares.append(posicion)
+    posicion+=1
+print(posicionesPares)
