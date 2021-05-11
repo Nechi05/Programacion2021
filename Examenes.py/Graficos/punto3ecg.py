@@ -12,4 +12,5 @@ print (valor)
 
 plt.plot(muestras, valor)
 plt.title('Electrogardiograma')
+plt.savefig('EcgExamen.png')
 plt.show()
