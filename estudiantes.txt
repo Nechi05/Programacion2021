@@ -1,0 +1,2 @@
+Archivo de datos de estudiantes/nnombre: Abraham edad: 21 estatura: 1.84/nnombre: Juan edad: 20 estatura: 1.78
+nombre: Abraham edad: 21 estatura: 1.85
